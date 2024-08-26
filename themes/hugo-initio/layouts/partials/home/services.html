@@ -1,0 +1,8 @@
+<div class="row">
+    {{ range where .Data.Pages "Section" .Section }}
+      <div class="col-sm-6 col-md-3">
+        <h6 class="text-center">{{ .Title }}</h6>
+        <p style="text-align: center;">{{ .Summary }}</p>
+      </div>
+    {{ end }}
+</div>

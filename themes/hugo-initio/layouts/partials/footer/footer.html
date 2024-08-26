@@ -1,0 +1,106 @@
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			{{ if .Site.Params.showFooterContact }}
+			<div class="col-md-3 widget">
+				<h3 class="widget-title" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;font-style:normal;">{{ i18n "footer_contact_title" }}</h3>
+				<h4><strong><span style="font-family:Arial, Helvetica, sans-serif;line-height: 35px;font-style: normal;font-size: 24px;color: white;">PT Tata Amalia Jaya</span></strong></h4>
+				<div class="widget-body">
+					<li class="address" style="font-size: 14px;">
+						Menara Cohive 101 – lantai 8, Mega Kuningan , Jakarta Selatan
+					</li>
+					<li class="phone" style="font-size: 14px;">
+						+62 821 1212 4452</li>
+					<li class="email" style="font-size: 14px;">
+						marketing@perizinanjakarta.com</li>
+						<p class="follow-me-icons" style="font-size: 20px ;">
+							{{ range .Site.Params.social }}
+											{{ if .footer }}
+												<a href="{{ .url }}" target="_blank"><i class="{{ .icon }} fa-1x"></i></a>
+											{{ end }}
+							{{ end }}
+									</p>
+						
+				</div>
+			</div>
+			{{ end }}
+			{{ if .Site.Params.showFooterTextWidget }}
+			<div class="col-md-3 widget" style="width: 50%; margin: 0 auto">
+				<h3 class="widget-title"  style="text-align: center;font-style: normal;font-weight: bold;font-size: 20px;">{{ i18n "footer_text_title" }}</h3>
+				<div class="widget-body">
+					<p style="text-align: center;">
+					<a href="https://lisensia.com">
+						<img decoding="async" alt="lisensia-apps-logo" src="https://perizinanjakarta.com/wp-content/uploads/2022/11/Lisensia_Logo-20221004.png" style="height: 105px;margin: 0 auto;width: 120px;vertical-align: middle;">
+				</a>
+			</p>
+					<p style="text-align: center;font-size: 14px;">
+						Aplikasi Management Perizinan <br>Bangunan Gedung	</p>
+				</div>
+			</div>
+			{{ end }}
+
+			{{ if .Site.Params.showFooterFormWidget }}
+			<div class="col-md-3 widget">
+				<h3 class="widget-title" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;font-style:normal;">{{ i18n "footer_form_title" }}</h3>
+				<div class="widget-body" >
+					<li><a href="/izin/izin5/" style="color: white;">Izin Tata Ruang</a></li>
+					<li><a href="/izin/izin4/" style="color: white;">Izin Lingkungan</a></li>
+					<li><a href="/izin/izin1/" style="color: white;">Izin Sebelum Pembangunan</a></li>
+					<li><a href="/izin/izin2/" style="color: white;">Izin Pedukung IMB</a></li>
+					<li><a href="/izin/izin3/"  style="color: white;">Izin Pasca Pembangunan</a></li>
+					<li><a href="/izin/izin6/"  style="color: white;">Izin Menara Dan Reklame</a></li>
+				</div>
+			</div>
+			{{ end }}
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p style="font-size: 15px;margin: 15px;">{{ if .Site.Params.address}}{{ .Site.Params.address }}{{ end }}</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right" style="font-size: 30px;">
+							{{ range .Site.Params.social }}
+											{{ if .footer }}
+												<a href="{{ .url }}" target="_blank"><i class="{{ .icon }} fa-1x"></i></a>
+											{{ end }}
+							{{ end }}
+						</p>
+						
+					</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+{{ $template := resources.Get "js/template.js" }}
+{{ $html5shiv := resources.Get "js/html5shiv.js" }}
+{{ $js := (slice $template $html5shiv | resources.Concat "js/bundle.js") | resources.Minify | resources.Fingerprint "sha512" }}
+<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+{{ if .Site.Params.disqus -}}
+<script id="dsq-count-scr" src="//{{ .Site.Params.disqus.site }}/count.js" async></script>
+{{ end -}}
+{{ if .Site.Params.google.analytics -}}
+{{ partial "footer/analyticstracking.html" . }}
+{{ end -}}
+</body>
+</html>
