@@ -1,7 +1,7 @@
 +++
 title = 'IZIN SEBELUM PEMBANGUNAN'
 +++
-![izin1](/images/izin-sebelum-pembangunan.png)
+![izin1](/hugopembangunan/images/izin-sebelum-pembangunan.png)
 
 Setelah mendapatkan izin ke-tataruang-an dan izin lingkungan maka dapat dilanjutkan untuk mengurus izin pembangunan atau biasa disebut IMB. Dapat dipastikan bahwa bangunan yang akan dibangun pada lokasi tsb wajib mengikuti izin ke-tataruang-an yang sudah disetujui sebelumnya.
 

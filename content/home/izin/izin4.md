@@ -2,7 +2,7 @@
 title = 'IZIN LINGKUNGAN'
 +++
 
-![izin1](/images/izin-lingkungan-1.png)
+![izin1](/hugopembangunan/images/izin-lingkungan-1.png)
 
 Izin lingkungan adalah perizinan untuk kegiatan yang berpotensi menimbulkan dampak lingkungan, seperti pencemaran, kemacetan, ketersedian air tanah, banjir, dll.
 

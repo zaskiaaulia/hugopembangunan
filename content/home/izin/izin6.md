@@ -2,7 +2,7 @@
 title = 'IZIN MENARA DAN REKLAME'
 +++
 
-![izin1](/images/IZIN-MENARA-1-1.jpg)
+![izin1](/hugopembangunan/images/IZIN-MENARA-1-1.jpg)
 
 Selain bangunan, ada juga perizinan Menara dan perizinan Reklame. Walaupun bentuknya bukanlah suatu bangunan, namun tetap harus mempunyai izin untuk mendirikan atau penyelenggaraannya.
 

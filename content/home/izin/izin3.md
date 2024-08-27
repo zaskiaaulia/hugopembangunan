@@ -2,7 +2,7 @@
 title = 'IZIN PASCA PEMBANGUNAN'
 +++
 
-![izin1](/images/izin-pasca-pembangunan.png)
+![izin1](/hugopembangunan/images/izin-pasca-pembangunan.png)
 
 Ketika sudah mendapatkan IMB maka owner dapat melakukan pekerjaan konstruksi. Namun Pemerintah masih merasa perlu juga melakukan pengawasan, dengan tujuan agar bangunan tsb dapat terbangun sesuai dengan IMB, karena banyak sekali pelanggaran dalam proses pembangunan apabila tidak dilakukan pengawasan. Kami juga mempunyai tim Dirwas yang dapat membantu pelaporan pengawasan ke Pemda Jakarta.
 

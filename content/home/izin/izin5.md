@@ -2,7 +2,7 @@
 title = 'IZIN TATA RUANG'
 +++
 
-![izin1](/images/izin-tata-ruang.png)
+![izin1](/hugopembangunan/images/izin-tata-ruang.png)
 
 Izin kategori Ketataruangan ini merupakan kategori perizinan yang terkait dengan aspek lokasi atau pertanahan, yang diperlukan sebagai landasan untuk izin pembangunan. Izin ini hanya berlaku untuk tanah yang luasnya > 5000m2.
 
